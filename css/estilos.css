@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*---------------------------------Variables---------------------------------*/
+
+:root {
+    /* Colores */
+    --green-color: #7ACC2D;
+    --vhite-color: white;
+    --black-color: #313337;
+    /* Espaciado */
+    --space: 10px;
+    /* Tipografía */
+    --normal: 12px;
+    /* Box Shadow */
+    --box: 0px 0px 5px 1px #e6e5e9;
+}
+
+/*---------------------------------Variables---------------------------------*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    font-size: var(--normal);
+    display: inherit;
+    padding: 5px 0;
+}
+
+
+
+/*---------------------------------Navigation Bar---------------------------------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--vhite-color);
+    max-height: 40px;
+}
+
+.nav-options {
+    margin-right: var(--space);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--vhite-color);
+}
+
+.brand-image {
+    padding-left: var(--space);
+}
+
+/*---------------------------------Main Section---------------------------------*/
+
+.main-section {
+    padding: 9% 21.5% 14.5%;
+    text-align: center;
+    height: 100px;
+    font-size: 14px;
+}
+
+.products {
+    background-image: url('../images/curve.png');
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 12% 28.5%;
+    display: flex;
+}
+
+.product {
+    padding: var(--space);
+    margin-top: -280px;
+}
+
+.product .content {
+    background-color: var(--vhite-color);
+    padding: 15px;
+    
+    box-shadow: var(--box);
+}
+
+.img-content {
+    text-align: center;
+}
+
+.main-button {
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--vhite-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main-button:hover {
+    background-color: #61a521;
+}
+
+/*---------------------------------Benefits---------------------------------*/
+
+.benefits-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15% 15% 5% 15%;
+}
+
+.benefits-content {
+    padding: var(--space);
+    width: 18%;
+}
+
+.benefits-img {
+    text-align: center;
+}
+
+.benefits-content img {
+    height: 100px;
+    margin: 0;
+}
+
+/*---------------------------------Mentions---------------------------------*/
+
+.mentions h1 {
+    text-align: center;
+    padding: 8% 0 15px 0;
+    font-size: 25px;
+    border-top: 0.5px solid rgb(240, 233, 233);
+}
+
+.mentions-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.mention {
+    width: 200px;
+    background-color: white;
+    margin: 5px;
+    box-shadow: var(--box);
+}
+
+.mention-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.mention-details {
+    padding: var(--space);
+    padding-top: 0;
+}
+
+.mention p {
+    margin: 0;
+}
+
+.mention h3 {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+/*---------------------------------Payment Module--------------------------*/
+
+.payment-product {
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.payment-product-img {
+    width: 150px;
+    margin: auto;
+}
+
+.payment-product-img img {
+    width: 100%;
+}
+
+.payment-module {
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.data {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.payment-module .main-button {
+    margin-top: var(--space);
+}
+
+/*---------------------------------Footer---------------------------------*/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--black-color);
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
